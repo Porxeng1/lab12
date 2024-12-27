@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template <typename D>
+void mySwap(D&,D&);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -29,4 +32,9 @@ int main(){
 
 	return 0;
 }
-
+template <typename D>
+void mySwap(D&x,D&y){
+	D before = x;
+	x = y;
+	y = before;
+}
